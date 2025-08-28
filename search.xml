@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Spring Bean</title>
+      <link href="/2025/08/28/Spring-Bean/"/>
+      <url>/2025/08/28/Spring-Bean/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Spring-Boot-Bean-笔记"><a href="#Spring-Boot-Bean-笔记" class="headerlink" title="Spring Boot Bean 笔记"></a>Spring Boot Bean 笔记</h1><h2 id="Bean-的定义方式"><a href="#Bean-的定义方式" class="headerlink" title="Bean 的定义方式"></a>Bean 的定义方式</h2><p>Bean 本质上就是被 Spring 容器管理的对象。常见定义方式有：</p><p><strong>一、XML 配置</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;bean class=&quot;com.example.UserService&quot;/&gt;</span><br></pre></td></tr></table></figure><p><strong>二、注解方式</strong></p><ul><li><code>@Component</code>：通用注解<ul><li><code>@Service</code>：语义化，用在 Service 层</li><li><code>@Repository</code>：语义化，用在 Dao 层</li><li><code>@Configuration</code>：配置类</li></ul></li></ul><p><strong>三、@Bean 注解</strong></p><ul><li>标注在方法上</li><li>必须写在配置类里（即被 <code>@Configuration</code> 标记的类）</li><li>特点：<ul><li>一个 <code>@Bean</code> 方法调用另一个 <code>@Bean</code> 方法时，Spring 会从容器中获取，而不是重新 new。</li><li>可以干预第三方 jar 包里的类，手动配置成 Bean。</li><li>方法参数会自动装配。</li></ul></li></ul><p><strong>四、@Import 注解</strong></p><ul><li><p>必须写在类上</p></li><li><p>导入的类会被注册为 Bean</p></li><li><p>用法：</p><ul><li><p>直接导入普通类</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@Import(UserService.class)</span><br></pre></td></tr></table></figure></li><li><p><code>ImportSelector</code></p><ul><li>实现 <code>ImportSelector</code> 接口</li><li>重写 <code>selectImports</code>，返回类的全限定名数组</li><li>批量注入 Bean</li></ul></li><li><p><code>ImportBeanDefinitionRegistrar</code></p><ul><li>实现 <code>ImportBeanDefinitionRegistrar</code> 接口</li><li>手动操作 <code>BeanDefinitionRegistry</code> 注册 Bean</li></ul></li></ul></li></ul><hr><h2 id="Bean-的实例化方式"><a href="#Bean-的实例化方式" class="headerlink" title="Bean 的实例化方式"></a>Bean 的实例化方式</h2><p><strong>一、无参构造函数</strong>（默认方式）</p><ul><li>如果类有无参构造函数，Spring 会优先使用它</li><li>如果类只有一个有参构造函数，Spring 会尝试自动装配参数</li><li>如果有多个有参构造函数且没有无参构造函数，会报错</li></ul><p><strong>二、实例工厂方法</strong>（配合 <code>@Bean</code>）</p><ul><li>在配置类里写工厂方法</li><li>可自由选择构造函数</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@Configuration</span><br><span class="line">public class AppConfig &#123;</span><br><span class="line">    @Bean</span><br><span class="line">    public UserService userService() &#123;</span><br><span class="line">        return new UserService(&quot;custom&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>三、FactoryBean</strong>（特殊的 Bean）</p><ul><li><code>FactoryBean</code> 是一个接口</li><li>当一个类实现了它，它本身就是一个“工厂”，用来生产 Bean</li><li>必须实现：<ul><li><code>getObject()</code>：返回真正的 Bean（伪装效果）</li><li><code>getObjectType()</code>：返回 Bean 的类型信息</li></ul></li><li>特点：<ul><li>容器中通过名字获取时拿到的是 <code>getObject()</code> 返回的对象</li><li>想获取工厂本身，需要在名字前加 <code>&amp;</code></li></ul></li></ul><hr><p>📌 可以这么总结：</p><ul><li><strong>BeanDefinition</strong> 是蓝图</li><li><strong>Bean</strong> 是实例</li><li>定义 Bean 有 XML、注解、JavaConfig、@Import 四大类方式</li><li>实例化 Bean 有构造器、工厂方法、FactoryBean 三大类方式</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Spring </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Spring </tag>
+            
+            <tag> IoC </tag>
+            
+            <tag> Bean </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>测试文章</title>
       <link href="/2025/05/02/ceshi/"/>
       <url>/2025/05/02/ceshi/</url>
