@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.emqo.xyz/2025/09/24/assembly-memory/</loc>
+    
+    <lastmod>2025-09-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.emqo.xyz/2025/08/28/Spring-Bean/</loc>
     
     <lastmod>2025-08-28</lastmod>
@@ -58,7 +67,7 @@
 
   <url>
     <loc>https://www.emqo.xyz/</loc>
-    <lastmod>2025-08-28</lastmod>
+    <lastmod>2025-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -66,35 +75,63 @@
   
   <url>
     <loc>https://www.emqo.xyz/tags/Spring/</loc>
-    <lastmod>2025-08-28</lastmod>
+    <lastmod>2025-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.emqo.xyz/tags/IoC/</loc>
-    <lastmod>2025-08-28</lastmod>
+    <lastmod>2025-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.emqo.xyz/tags/Bean/</loc>
-    <lastmod>2025-08-28</lastmod>
+    <lastmod>2025-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.emqo.xyz/tags/Assembly/</loc>
+    <lastmod>2025-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.emqo.xyz/tags/Computer-Architecture/</loc>
+    <lastmod>2025-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.emqo.xyz/tags/CPU/</loc>
+    <lastmod>2025-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.emqo.xyz/tags/Memory/</loc>
+    <lastmod>2025-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.emqo.xyz/tags/DI/</loc>
-    <lastmod>2025-08-28</lastmod>
+    <lastmod>2025-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.emqo.xyz/tags/Autowired/</loc>
-    <lastmod>2025-08-28</lastmod>
+    <lastmod>2025-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -103,7 +140,14 @@
   
   <url>
     <loc>https://www.emqo.xyz/categories/Spring/</loc>
-    <lastmod>2025-08-28</lastmod>
+    <lastmod>2025-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.emqo.xyz/categories/Assembly/</loc>
+    <lastmod>2025-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

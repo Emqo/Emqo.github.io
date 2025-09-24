@@ -1,3 +1,4 @@
+https://www.emqo.xyz/2025/09/24/assembly-memory/
 https://www.emqo.xyz/2025/08/28/Spring-Bean/
 https://www.emqo.xyz/2025/08/28/Spring-DI/
 https://www.emqo.xyz/categories/index.html
@@ -8,6 +9,11 @@ https://www.emqo.xyz/
 https://www.emqo.xyz/tags/Spring/
 https://www.emqo.xyz/tags/IoC/
 https://www.emqo.xyz/tags/Bean/
+https://www.emqo.xyz/tags/Assembly/
+https://www.emqo.xyz/tags/Computer-Architecture/
+https://www.emqo.xyz/tags/CPU/
+https://www.emqo.xyz/tags/Memory/
 https://www.emqo.xyz/tags/DI/
 https://www.emqo.xyz/tags/Autowired/
 https://www.emqo.xyz/categories/Spring/
+https://www.emqo.xyz/categories/Assembly/

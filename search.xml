@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>汇编基础复习笔记：存储器与CPU</title>
+      <link href="/2025/09/24/assembly-memory/"/>
+      <url>/2025/09/24/assembly-memory/</url>
+      
+        <content type="html"><![CDATA[<h1 id="汇编基础复习笔记"><a href="#汇编基础复习笔记" class="headerlink" title="汇编基础复习笔记"></a>汇编基础复习笔记</h1><p>本文总结了汇编语言和计算机组成相关的核心概念，包括存储器、指令与数据、CPU 与总线交互等，作为快速复习用。</p><hr><h2 id="存储器的基本概念"><a href="#存储器的基本概念" class="headerlink" title="存储器的基本概念"></a>存储器的基本概念</h2><p>计算机存储器是用来存放<strong>指令和数据</strong>的。程序执行时，CPU 会从存储器中依次取出指令并执行，同时根据需要读写数据。</p><p>存储器分为两大类：</p><ul><li><strong>主存储器（内存）</strong>：CPU 可直接访问，速度快，掉电丢失。</li><li><strong>辅助存储器（外存）</strong>：如硬盘、U盘，用于长期保存数据。</li></ul><hr><h2 id="指令和数据"><a href="#指令和数据" class="headerlink" title="指令和数据"></a>指令和数据</h2><p>在存储器里，<strong>指令和数据没有本质区别</strong>，它们都是二进制形式存放的。<br>区别在于 <strong>CPU 取出时如何解释</strong>：  </p><ul><li>如果按指令解读，就执行。  </li><li>如果按数据解读，就参与运算或存储。</li></ul><hr><h2 id="存储单元"><a href="#存储单元" class="headerlink" title="存储单元"></a>存储单元</h2><p>存储器由很多小格子组成，每个格子叫<strong>存储单元</strong>，每个存储单元能存放 <strong>1 个字节（8 位）</strong>。  </p><p>每个存储单元有一个<strong>唯一编号</strong>，称为 <strong>地址</strong>。<br>所以内存实际上是一系列按字节编号的单元，CPU 用地址来访问它们。</p><hr><h2 id="CPU-对存储器的读写"><a href="#CPU-对存储器的读写" class="headerlink" title="CPU 对存储器的读写"></a>CPU 对存储器的读写</h2><p>CPU 与内存交互主要有两个操作：  </p><ul><li><strong>读操作</strong>：把存储单元的数据送入 CPU。  </li><li><strong>写操作</strong>：把 CPU 中的数据写入存储单元。</li></ul><p>这两个操作通过总线完成。</p><hr><h2 id="三大总线"><a href="#三大总线" class="headerlink" title="三大总线"></a>三大总线</h2><p>CPU 与存储器、外设之间的通信依靠总线系统：  </p><ul><li><strong>地址总线</strong>：指定要访问的存储单元编号。  </li><li><strong>数据总线</strong>：传输实际的数据（读进来或写出去）。  </li><li><strong>控制总线</strong>：传输读写控制信号（如读&#x2F;写方向，时钟等）。</li></ul><p>公式：<br>最大寻址空间 &#x3D; 2^(地址总线位数) 字节。</p><hr><h2 id="内存地址空间"><a href="#内存地址空间" class="headerlink" title="内存地址空间"></a>内存地址空间</h2><p>所有存储单元的编号范围称为 <strong>地址空间</strong>。<br>例如：  </p><ul><li>13 根地址线 → 2^13 &#x3D; 8192 → 最大寻址 8KB。  </li><li>32 根地址线 → 2^32 &#x3D; 4GB。</li></ul><hr><h2 id="主板与接口卡"><a href="#主板与接口卡" class="headerlink" title="主板与接口卡"></a>主板与接口卡</h2><ul><li><strong>主板</strong>：安装 CPU、内存条、总线接口，是整个计算机的核心平台。  </li><li><strong>接口卡</strong>：扩展功能的硬件，如显卡、声卡、网卡。它们通过总线与 CPU&#x2F;内存交互。</li></ul><hr><h2 id="存储器芯片的种类"><a href="#存储器芯片的种类" class="headerlink" title="存储器芯片的种类"></a>存储器芯片的种类</h2><p>常见的存储器芯片有：  </p><ul><li><strong>RAM</strong>（随机存取存储器）：断电丢失，用作内存。  <ul><li><strong>SRAM</strong>：静态 RAM，速度快，常用于缓存。  </li><li><strong>DRAM</strong>：动态 RAM，容量大，用作主存。</li></ul></li><li><strong>ROM</strong>（只读存储器）：内容固定或半固定，断电保存，存放 BIOS 等。  </li><li><strong>Flash</strong>：一种可擦写的非易失性存储器，用于 U 盘、SSD。</li></ul><hr><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol><li>程序和数据都存放在存储器中，以字节为单位。  </li><li>CPU 通过地址总线、数据总线、控制总线与存储器交互。  </li><li>内存地址空间大小由地址总线宽度决定。  </li><li>主板和接口卡为 CPU 与存储器提供了硬件平台。  </li><li>存储器芯片分为易失性（RAM）与非易失性（ROM、Flash）。</li></ol><hr><p>这份笔记提炼了核心内容，便于汇编学习和计算机组成原理的快速复习。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Assembly </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Assembly </tag>
+            
+            <tag> Computer Architecture </tag>
+            
+            <tag> CPU </tag>
+            
+            <tag> Memory </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Spring 依赖注入（DI）</title>
       <link href="/2025/08/28/Spring-DI/"/>
       <url>/2025/08/28/Spring-DI/</url>
