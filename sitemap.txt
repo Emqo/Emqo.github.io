@@ -9,11 +9,11 @@ https://www.emqo.xyz/
 https://www.emqo.xyz/tags/Spring/
 https://www.emqo.xyz/tags/IoC/
 https://www.emqo.xyz/tags/Bean/
+https://www.emqo.xyz/tags/DI/
+https://www.emqo.xyz/tags/Autowired/
 https://www.emqo.xyz/tags/Assembly/
 https://www.emqo.xyz/tags/Computer-Architecture/
 https://www.emqo.xyz/tags/CPU/
 https://www.emqo.xyz/tags/Memory/
-https://www.emqo.xyz/tags/DI/
-https://www.emqo.xyz/tags/Autowired/
 https://www.emqo.xyz/categories/Spring/
 https://www.emqo.xyz/categories/Assembly/
